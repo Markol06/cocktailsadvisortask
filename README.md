@@ -21,3 +21,15 @@ Place final_cocktails.csv in data/
 Download llama-2-7b-chat.Q4_K_M.gguf and place it in models/
 4. Run the chatbot
 python src/chatbot.py
+
+5. Project Structure
+Cocktail_task/
+│── pythonProject/                    # Main project folder  
+│   ├── chatbot.py                     # Main script for chatbot interaction  
+│   ├── model.py                        # Llama 2 model integration  
+│   ├── user_preferences.py             # Handles user preferences (likes, dislikes, allergies)  
+│   ├── vector_db.py                    # FAISS vector database implementation for cocktail search  
+│   ├── Cocktails dataset.ipynb         # Jupyter Notebook for testing and exploration  
+│   ├── final_cocktails.csv             # Dataset with cocktail recipes  
+│── README.md                           # Project documentation  
+│── requirements.txt                     # List of dependencies  
